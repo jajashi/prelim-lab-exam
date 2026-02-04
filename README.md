@@ -2,7 +2,7 @@
 
 Student Info App (React + Vite)
 
-## Features ✅
+## Features 
 - Component usage (HeaderComponent, StudentComponent)
 - Props and state demonstrated
 - Client-side routing (Home, Students)
