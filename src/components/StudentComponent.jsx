@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Icon from "./Icon";
+import { EyeIcon, EyeSlashIcon, ArrowUpIcon, TrashIcon } from "@heroicons/react/24/outline";
 
 // Displays a student's basic info and allows promoting them (increment year)
 export default function StudentComponent({ name, course, year, onRemove }) {
@@ -42,25 +42,25 @@ export default function StudentComponent({ name, course, year, onRemove }) {
         >
           {showDetails ? (
             <>
-              <Icon name="eye-off" className="icon" />
+              <EyeSlashIcon className="icon" />
               Hide
             </>
           ) : (
             <>
-              <Icon name="eye" className="icon" />
+              <EyeIcon className="icon" />
               Show
             </>
           )}
         </button>
 
         <button className="btn primary" onClick={promote} aria-label="Promote student">
-          <Icon name="promote" className="icon" />
+          <ArrowUpIcon className="icon" />
           Promote
         </button>
 
         {onRemove && (
           <button className="btn danger" onClick={handleRemove} title="Remove student" aria-label="Remove student">
-            <Icon name="trash" className="icon" />
+            <TrashIcon className="icon" />
             Remove
           </button>
         )}

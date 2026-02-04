@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Icon from "./Icon";
+import { SparklesIcon } from "@heroicons/react/24/solid";
 
 export default function HeaderComponent({ title = "App" }) {
   return (
     <header className="app-header">
       <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-        <Icon name="logo" className="logo" />
+        <SparklesIcon className="logo" />
         <h1 className="app-title">{title}</h1>
       </div>
       <nav className="app-nav">
