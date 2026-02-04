@@ -18,13 +18,13 @@ Student Info App (React + Vite)
 - `src/pages` - Home and Students pages
 - `src/services/api.js` - axios wrapper and fetch function
 
-## Run locally 💡
+## Run locally 
 1. Install dependencies: `npm install`
 2. Start dev server: `npm run dev`
 
 Open the URL printed by Vite in your browser (usually `http://localhost:5173`).
 
-## Deployable preview 🚀
+## Deployable preview 
 This project is configured to deploy a built preview to **GitHub Pages** automatically on push to `main`.
 
 - The workflow builds with `npm run build` and publishes the `dist` folder to the `gh-pages` branch.
@@ -36,6 +36,6 @@ Notes:
 - You can trigger a deploy by pushing a new commit to `main` or by re-running the workflow in the Actions tab.
 
 ## Notes
-- Visit `Home` to see sample students created using props and state. Use the **Promote** and **Remove** buttons to change state. ✅
-- Visit `Students` to fetch a list of students from JSONPlaceholder (via Axios). The page shows loading and error states. Click a student to go to `/students/:id` for a details page. ✅
+- Visit `Home` to see sample students created using props and state. Use the **Promote** and **Remove** buttons to change state. 
+- Visit `Students` to fetch a list of students from JSONPlaceholder (via Axios). The page shows loading and error states. Click a student to go to `/students/:id` for a details page. 
 
