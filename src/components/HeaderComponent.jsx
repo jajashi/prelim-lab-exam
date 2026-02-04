@@ -1,14 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { SparklesIcon } from "@heroicons/react/24/solid";
-
 export default function HeaderComponent({ title = "App" }) {
   return (
     <header className="app-header">
-      <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-        <SparklesIcon className="logo" />
-        <h1 className="app-title">{title}</h1>
-      </div>
+      <h1 className="app-title">{title}</h1>
       <nav className="app-nav">
         <NavLink to="/" end className={({ isActive }) => (isActive ? "active" : "") }>
           Home
