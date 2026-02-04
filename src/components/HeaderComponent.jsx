@@ -1,13 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Icon from "./Icon";
 
 export default function HeaderComponent({ title = "App" }) {
   return (
     <header className="app-header">
       <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-        <svg className="logo" viewBox="0 0 24 24" role="img" aria-hidden="true">
-          <path d="M12 2C7.58 2 4 5.58 4 10c0 5 8 12 8 12s8-7 8-12c0-4.42-3.58-8-8-8zM12 12a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" />
-        </svg>
+        <Icon name="logo" className="logo" />
         <h1 className="app-title">{title}</h1>
       </div>
       <nav className="app-nav">

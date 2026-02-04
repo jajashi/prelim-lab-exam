@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Icon from "./Icon";
 
 // Displays a student's basic info and allows promoting them (increment year)
 export default function StudentComponent({ name, course, year, onRemove }) {
@@ -41,25 +42,25 @@ export default function StudentComponent({ name, course, year, onRemove }) {
         >
           {showDetails ? (
             <>
-              <svg className="icon" viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M12 5c-7 0-10 6.5-10 7s3 7 10 7 10-6.5 10-7-3-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg>
+              <Icon name="eye-off" className="icon" />
               Hide
             </>
           ) : (
             <>
-              <svg className="icon" viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M12 5c7 0 10 6.5 10 7s-3 7-10 7S2 13.5 2 13s3-7 10-8zm0 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg>
+              <Icon name="eye" className="icon" />
               Show
             </>
           )}
         </button>
 
         <button className="btn primary" onClick={promote} aria-label="Promote student">
-          <svg className="icon" viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M12 2l4 7h-3v9h-2v-9H8l4-7z"/></svg>
+          <Icon name="promote" className="icon" />
           Promote
         </button>
 
         {onRemove && (
           <button className="btn danger" onClick={handleRemove} title="Remove student" aria-label="Remove student">
-            <svg className="icon" viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M6 7h12v13a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V7zm3-4h6l1 1h4v2H2V4h4l1-1z"/></svg>
+            <Icon name="trash" className="icon" />
             Remove
           </button>
         )}
